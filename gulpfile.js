@@ -5,8 +5,9 @@ var gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css');
 var jsSrc = [
     'node_modules/angular/angular.min.js',
+    'node_modules/angular-animate/angular-animate.min.js',
     'src/client/javascripts/app.js',
-    'src/client/javascripts/controllers/new_controller.js',
+    'src/client/javascripts/controllers/projects_list_controller.js'
 ];
 
 gulp.task('build:css', function() {

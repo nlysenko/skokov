@@ -1,1 +1,1 @@
-var skokovModule = angular.module('skokovModule', []);
+var skokovModule = angular.module('skokovModule', ['ngAnimate']);
