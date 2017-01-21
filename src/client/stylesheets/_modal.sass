@@ -1,0 +1,73 @@
+.active-modal
+    background-color: black
+    z-index: 1000
+    opacity: 0.4
+
+.modal-slade-container
+    position: absolute
+    z-index: 99999
+    width: 600px
+    height: 600px
+    top: 50%
+    margin-top: -300px
+    left: 50%
+    margin-left: -300px
+    background-color: $bgColor
+    border: 1px solid $line
+    border-radius: 3px
+    padding: 5px
+
+.selected-img-modal
+    padding-top: 20px
+    width: 100%
+    height: 100%
+
+.close-modal-icon
+    float: right
+    position: static
+    cursor: pointer
+
+.modal-slide
+    max-height: 100%
+    margin: 0 auto
+
+.animation-modal.ng-hide-add,
+.animation-modal.ng-hide-remove
+    transition: 1s linear all
+    display: block !important
+
+.animation-modal.ng-hide-add,
+.animation-modal.ng-hide-remove.ng-hide-remove-active
+    opacity: 1
+
+.animation-modal.ng-hide-add.ng-hide-add-active,
+.animation-modal.ng-hide-remove
+    opacity: 0
+
+@media only screen and (max-height: 620px)
+    .modal-slade-container
+        width: 600px
+        height: 500px
+        margin-top: -250px
+        margin-left: -300px
+
+@media only screen and (max-height: 510px)
+    .modal-slade-container
+        width: 300px
+        height: 250px
+        margin-top: -150px
+        margin-left: -125px
+
+@media only screen and (max-width: 992px)
+    .modal-slade-container
+        width: 600px
+        height: 500px
+        margin-top: -250px
+        margin-left: -300px
+
+@media only screen and (max-width: 650px)
+    .modal-slade-container
+        width: 300px
+        height: 250px
+        margin-top: -150px
+        margin-left: -125px
