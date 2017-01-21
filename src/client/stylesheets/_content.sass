@@ -1,0 +1,145 @@
+
+.project-content
+    margin-top: 80px
+
+.description-container
+    padding-right: 10px
+
+.sidebar-container
+    padding-left: 10px
+
+.description
+    height: 580px
+    background-color: $basicGgray
+
+.details
+    height: 400px
+    background-color: $basicGgray
+
+.route-img-block
+    height: calc(100% - 100px)
+
+.select-imgs
+    height: 100px
+    background-color: $basicBlack
+    padding: 0 40px 0 40px
+
+.route-btn-block
+    float: left
+    height: 100%
+    width: 40px
+    position: relative
+
+.route-btn
+    height: 100px
+    width: 40px
+    background-color: $basicBlack
+    border: none
+    outline: none
+    position: absolute
+    top: 50%
+    margin-top: -50px
+
+.open-modal-icon
+    cursor: pointer
+    position: absolute
+    top: 7px
+    left: 12px
+
+.active-img-block
+    float: left
+    width: calc(100% - 80px)
+    height: 100%
+    position: relative
+    text-align: center
+
+.selected-img-block
+    position: absolute
+    top: 16px
+    left: 0
+    right: 0
+    bottom: 0
+
+.selected-img
+    max-width: 410px
+    max-height: 450px
+
+.elem-img
+    cursor: pointer
+    max-height: 90px
+
+.slide-list
+    width: 100%
+    height: 100%
+    overflow: hidden
+    overflow-x: auto
+    white-space: nowrap
+    overflow-y: hidden
+    padding-top: 2px
+
+.slide
+    display: inline-block
+    padding: 3px
+
+.project-description
+    padding: 40px
+    border-bottom: 1px solid $line
+
+.project-description-header
+    width: 240px
+    height: 30px
+    background-color: $basicGgray
+    text-transform: uppercase
+    line-height: 30px
+    font-family: 'Raleway', sans-serif
+    color: $basicYellow
+    font-size: 18px
+
+.description-text
+    padding-top: 40px
+    font-size: 15px
+    font-family: 'Raleway', sans-serif
+    color: $basicGgray
+
+.recent-projects
+    padding: 40px
+
+.recent-img
+    min-width: 250px
+
+.recent-projects-imgs
+    padding-top: 40px
+
+.active
+    background-color: $basicYellow
+    .elem-img
+        opacity: 0.5
+
+.animation-fade.ng-hide-add,
+.animation-fade.ng-hide-remove
+    transition: 1s linear all
+    display: block !important
+
+.animation-fade.ng-hide-add,
+.animation-fade.ng-hide-remove.ng-hide-remove-active
+    opacity: 1
+
+.animation-fade.ng-hide-add.ng-hide-add-active,
+.animation-fade.ng-hide-remove
+    opacity: 0
+    position: absolute
+    top: 16px
+    left: 0
+    right: 0
+    bottom: 0
+
+@media only screen and (max-width: 768px)
+    .route-btn
+        height: 50px
+    .selected-img
+        max-width: 250px
+        max-height: 285px
+    .description-container, .sidebar-container
+        padding: 5px 0 5px 0
+    .description
+        height: 420px

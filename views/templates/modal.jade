@@ -1,0 +1,4 @@
+.modal-slade-container.animation-modal(ng-show='modalIsVisible')
+    span.glyphicon.glyphicon-resize-small.close-modal-icon(aria-hidden='true', ng-click='closeModal();')
+    .selected-img-modal(ng-repeat='(i, slide) in slides', ng-show='i == slideIndex')
+        img.modal-slide.img-responsive(ng-src='{{ slide.image }}')
