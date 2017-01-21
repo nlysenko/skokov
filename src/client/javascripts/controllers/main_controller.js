@@ -11,6 +11,18 @@ skokovModule.controller('mainCtrl', ['$scope', '$location', '$anchorScroll', fun
         {image: '/static/images/photo-6.png'}
     ];
 
+    $scope.projectDetails = [
+        '10/22/2013',
+        'skokov responsive wordpress theme',
+        'website design',
+        'ie8, ie9, ie10, firefox, safari, opera, chrome',
+        'wordpress 3.5, wordpress 3.6',
+        'responsive',
+        'logotype',
+        'unique icons',
+        'live preview'
+    ];
+
     var total = $scope.slides.length;
 
     $scope.openModal = function () {
