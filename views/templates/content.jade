@@ -19,13 +19,15 @@
                         li.slide(ng-repeat='(i, slide) in slides', ng-class='slideIndex == this.$index ? "active" : "" ')
                             img.elem-img(ng-src='{{ slide.image }}', ng-click='showImg();')
             .project-description
-                .project-description-header.text-center project description
+                .description-h3.text-center
+                    h3.h3 project description
                 .description-text
                     p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi numquam, provident vero ducimus tempore blanditiis libero sit, ipsa commodi molestiae porro unde optio cum voluptates ad. Optio, quasi quis.
                     p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi numquam, provident vero ducimus tempore blanditiis libero sit, ipsa commodi molestiae porro unde optio cum voluptates ad. Optio, quasi quis.
                     p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eligendi numquam, provident vero ducimus tempore blanditiis libero sit, ipsa commodi molestiae porro unde optio cum voluptates ad. Optio, quasi quis.
             .recent-projects
-                .project-description-header.text-center recent projects
+                .description-h3.text-center
+                    h3.h3 recent projects
                 .row.recent-projects-imgs
                     .col-sm-4
                         img.img-responsive(src='/static/images/project-1.png')
@@ -33,14 +35,29 @@
                         img.img-responsive(src='/static/images/project-2.png')
                     .col-sm-4
                         img.img-responsive(src='/static/images/project-3.png')
-    .col-sm-4
+    .col-sm-4.link-icon-right
         .row.sidebar-container
             .categories
-                p.details-head project details
-                .row.details(ng-repeat='detail in projectDetails')
-                    a(href='')
-                        .link-icon-right
-                            span.glyphicon.glyphicon-chevron-right.icon-right(aria-hidden='true')
-                        span.detail{{ detail }}
+                h2.h2 project details
+                .categories-block
+                    .category.media(ng-repeat='detail in projectDetails')
+                        .media-left.media-middle
+                            label.media-object.category-link
+                                span.glyphicon.glyphicon-chevron-right.icon-span(aria-hidden='true')
+                        .media-body
+                            a.post-link(href='#')
+                                {{ detail }}
             .posts
+                h2.h2 popular posts
+                .posts-block
+                    .post.media(ng-repeat='post in posts')
+                        .media-left.media-middle
+                            a(href='#')
+                                img.media-object(ng-src='{{ post.image }}')
+                        .media-body
+                            a.post-link(href='#') {{ post.name }}
+                            p.date
+                                {{ post.date }}
+                                span.glyphicon.glyphicon-heart(aria-hidden='true')
+                                {{ post.likes }}
             .tags
