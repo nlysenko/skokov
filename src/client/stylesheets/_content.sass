@@ -5,15 +5,8 @@
 .description-container
     padding-right: 10px
 
-.sidebar-container
-    padding-left: 10px
-
 .description
     height: 580px
-    background-color: $basicGgray
-
-.details
-    height: 400px
     background-color: $basicGgray
 
 .route-img-block
@@ -85,14 +78,23 @@
     padding: 40px
     border-bottom: 1px solid $line
 
-.project-description-header
+.description-h3
     width: 240px
     height: 30px
     background-color: $basicGgray
+
+.h2, .h3
+    margin: 0
     text-transform: uppercase
-    line-height: 30px
     font-family: 'Raleway', sans-serif
     color: $basicYellow
+
+.h2
+    line-height: 1
+    font-size: 20px
+
+.h3
+    line-height: 30px
     font-size: 18px
 
 .description-text
@@ -143,3 +145,80 @@
         padding: 5px 0 5px 0
     .description
         height: 420px
+
+.sidebar-container
+    padding-left: 10px
+
+.categories, .posts, .tags
+    background-color: $basicGgray
+    padding: 30px
+    margin-bottom: 20px
+
+.categories-block, .posts-block
+    padding-top: 30px
+
+.category
+    min-height: 30px
+    margin-bottom: 10px
+
+.post
+    margin-bottom: 15px
+
+.category-link
+    width: 30px
+    height: 30px
+    background-color: $basicYellow
+    margin: 0
+
+.icon-span
+    position: relative
+    top: 6px
+    left: 7px
+
+.post-link
+    text-transform: uppercase
+    font-family: 'Raleway', sans-serif
+    font-size: 14px
+    color: $basicWite
+
+.post-link:hover
+    color: $basicYellow
+
+.post-link:focus
+    color: $basicWite
+
+@media only screen and (max-width: 1199px)
+    .post-link
+        font-size: 12px
+
+@media only screen and (max-width: 991px)
+    .category, .post
+        margin-bottom: 7px
+    .post-link
+        font-size: 8px
+
+@media only screen and (max-width: 767px)
+    .category, .post
+        margin-bottom: 16px
+    .post-link
+        font-size: 14px
+
+.date
+    color: $basicYellow
+    font-size: 8px
+    text-align: right
+
+.tags-list
+    margin: 0
+
+.tags-block
+    margin-top: 20px
+
+.tags-list>li
+    text-transform: uppercase
+    font-size: 12px
+    font-family: 'Raleway', sans-serif
+    line-height: 30px
+    background-color: $basicYellow
+    color: $basicBlack
+    margin: 5px

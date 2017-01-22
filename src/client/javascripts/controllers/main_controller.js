@@ -11,6 +11,51 @@ skokovModule.controller('mainCtrl', ['$scope', '$location', '$anchorScroll', fun
         {image: '/static/images/photo-6.png'}
     ];
 
+    $scope.projectDetails = [
+        '10/22/2013',
+        'skokov responsive wordpress theme',
+        'website design',
+        'ie8, ie9, ie10, firefox, safari, opera, chrome',
+        'wordpress 3.5, wordpress 3.6',
+        'responsive',
+        'logotype',
+        'unique icons',
+        'live preview'
+    ];
+
+    $scope.posts = [
+        {
+            name: '15 Fresh Examples of Clean and  Minimal Web Designs',
+            image: '/static/images/post-1.png',
+            date: 'Oct. 09, 2013 ',
+            likes: ' 21'
+        },
+        {
+            name: 'Inspiring Examples of Color in  Web Design',
+            image: '/static/images/post-2.png',
+            date: 'Oct. 10, 2013 ',
+            likes: ' 19'
+        },
+        {
+            name: '17 Inspiring Examples of  Parallax Scrolling Sites',
+            image: '/static/images/post-3.png',
+            date: 'Oct. 12, 2013 ',
+            likes: ' 15'
+        },
+        {
+            name: '15 Websites with Beautiful  Typography',
+            image: '/static/images/post-4.png',
+            date: 'Oct. 08, 2013 ',
+            likes: ' 13'
+        },
+        {
+            name: '20 Resources for Beginner  Designers & Developers',
+            image: '/static/images/post-5.png',
+            date: 'Oct. 10, 2013 ',
+            likes: ' 7'
+        }
+    ];
+
     var total = $scope.slides.length;
 
     $scope.openModal = function () {
