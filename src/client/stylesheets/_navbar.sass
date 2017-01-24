@@ -1,15 +1,20 @@
-.header
-    height: 160px
+.skokov-navbar
+    min-height: 160px
+    margin-bottom: 0
 
-.logo
-    padding: 0
-    line-height: 160px
-    vertical-align: middle
+.skokov-header
+    padding-left: 120px
 
-.nav-links
-    margin-top: 54px
+.navbar-container
+    margin-top: 22px
+
+.navbar-list
+    margin-top: 33px
 
 .nav-link
+    margin-right: 10px
+
+.nav-link>a
     color: $basicBlack
     font-size: 16px
     font-family: 'Raleway', sans-serif
@@ -18,6 +23,19 @@
 .nav>li>a:focus, .nav>li>a:hover
     background-color: $basicYellow
 
-@media only screen and (max-width: 768px)
-    .nav-links
+@media only screen and (max-width: 991px)
+    .skokov-header
+        padding-left: 20px
+
+@media only screen and (max-width: 767px)
+    .brand-link
+        position: relative
+        left: 50%
+        margin-left: -58px
+    .skokov-header
+        padding-left: 0
+    .navbar-list, .nav-link
         margin: 0
+    .nav-link
+        text-align: center
+        margin-top: 5px
