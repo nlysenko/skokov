@@ -29,11 +29,11 @@
                 .description-h3.text-center
                     h3.h3 recent projects
                 .row.recent-projects-imgs
-                    .col-sm-4
+                    .col-md-4
                         img.img-responsive(src='/static/images/project-1.png')
-                    .col-sm-4
+                    .col-md-4
                         img.img-responsive(src='/static/images/project-2.png')
-                    .col-sm-4
+                    .col-md-4
                         img.img-responsive(src='/static/images/project-3.png')
     .col-sm-4
         .row.sidebar-container
@@ -44,7 +44,7 @@
                         .media-left.media-middle
                             label.media-object.category-link
                                 span.glyphicon.glyphicon-chevron-right.icon-span(aria-hidden='true')
-                        .media-body
+                        .media-body.media-middle
                             a.post-link(href='#')
                                 {{ detail }}
             .posts
@@ -56,7 +56,7 @@
                                 img.media-object(ng-src='{{ post.image }}')
                         .media-body
                             a.post-link(href='#') {{ post.name }}
-                            p.date
+                            p.date.media-bottom
                                 {{ post.date }}
                                 span.glyphicon.glyphicon-heart(aria-hidden='true')
                                 {{ post.likes }}

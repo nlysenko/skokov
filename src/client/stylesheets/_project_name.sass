@@ -1,15 +1,12 @@
 .top-img
     height: 150px
-    position: relative
+    padding-left: 120px
     background: url('/static/images/top-img.png') no-repeat
 
 .project
-    position: absolute
-    top: 50%
-    left: 2%
     width: 315px
     height: 68px
-    margin-top: -34px
+    margin-top: 41px
     background-color: $basicGgray
 
 .h1
@@ -21,6 +18,18 @@
     line-height: 68px
     padding-left: 10px
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 991px)
+    .top-img
+        padding-left: 40px
+
+@media only screen and (max-width: 767px)
     .project
         width: 170px
+
+@media only screen and (max-width: 767px)
+    .top-img
+        padding-left: 0
+    .project
+        position: relative
+        left: 50%
+        margin-left: -85px

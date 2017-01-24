@@ -4,6 +4,7 @@ html(lang='en', ng-app='skokovModule')
         title skokov
         link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
         integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u', crossorigin='anonymous')
+        link(rel="stylesheet", href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css", integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU", crossorigin="anonymous")
         link(rel='stylesheet', href='/static/stylesheets/style.css')
         script(src='/static/javascripts/app.js')
 
@@ -11,8 +12,9 @@ html(lang='en', ng-app='skokovModule')
         .home#home_top(ng-controller='mainCtrl')
             include ./templates/modal
             .home-page(ng-class='modalIsVisible ? "active-modal" : ""')
+                include ./templates/navbar
                 .container.home-page
-                    include ./templates/navbar
                     include ./templates/project-name
                     include ./templates/content
-
+                    include ./templates/foother
+                include ./templates/navbar-bottom
