@@ -22,7 +22,7 @@ app.use('/', router);
 
 app.listen(3000, (err) => {
     if (!err) {
-        console.log("Server listen on localhost:3000");
+        console.log("Server listen on http://localhost:3000");
     } else {
         console.log(err);
     }
